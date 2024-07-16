@@ -252,7 +252,7 @@ public final class MaterialDatePicker<S> extends DialogFragment {
       @Nullable ViewGroup viewGroup,
       @Nullable Bundle bundle) {
     int layout = fullscreen ? R.layout.mtrl_picker_fullscreen : R.layout.mtrl_picker_dialog;
-    View root = layoutInflater.inflate(layout, viewGroup);
+    View root = layoutInflater.inflate(layout, viewGroup, false);
     Context context = root.getContext();
 
     if (dayViewDecorator != null) {
